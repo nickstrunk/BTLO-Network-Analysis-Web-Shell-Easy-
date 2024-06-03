@@ -65,6 +65,15 @@ The SOC received an alert in their SIEM for ‘Local to Local Port Scanning’ w
 <br />
 <br />
 
+<h3>Q5)What is the name of the php file through which the attacker uploaded a web sheel?</h3>
+<b>Investigate HTTP POST requets </b> <br />
+** Filter for http.request.method==POST<br /> 
+** Ignore sqlmap requests (SQL injection attempts) > Discover POST for /upload.php <br />
+** Inspect request > Find Refer (what file was uploaded) http://10.251.96.5/editprofile.php
+** ANSWER TO Q5) http://10.251.96.5/editprofile.php <br /> <br />
+<img src="https://github.com/nickstrunk/Network-Analysis-Web-Shell-Easy-/assets/165805194/7544f18a-cb02-47c9-b619-21187e2451bd" height="80%" width="80%" alt="Planning Diagram"/>
+<br />
+<br />
 </p>
 
 <!--
