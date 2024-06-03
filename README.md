@@ -32,9 +32,20 @@ The SOC received an alert in their SIEM for ‘Local to Local Port Scanning’ w
 
 <h3>Q2)What is the port range scanned by the suspicious host?</h3>
 <b>Sort on Port B both ways to see first and last port scanned</b> <br />
-** See the port range is 1-1024 <br /> <br />
+** See the port range is 1-1024 <br /> 
+** ANSWER TO Q2) 1-1024 <br /> <br />
 <img src="https://github.com/nickstrunk/Network-Analysis-Web-Shell-Easy-/assets/165805194/7c622811-56d9-4729-9e55-f5a40b0ab69f" height="80%" width="80%" alt="Planning Diagram"/>
- 
+<br />
+<br />
+
+<h3>Q3)What is the type of port scan conducted?</h3>
+<b>Filter for IP conducting the port scan</b> <br />
+** Filter for ip.src==10.251.96.4 <br /> 
+** Large number of SYN packets observed <br />
+** ANSWER TO Q2) TCP SYN scan <br /> <br />
+<img src="https://github.com/nickstrunk/Network-Analysis-Web-Shell-Easy-/assets/165805194/6aba6713-9a51-40ee-bf52-2adcdcb34cc6" height="80%" width="80%" alt="Planning Diagram"/>
+<br />
+<br />
 
 
 </p>
