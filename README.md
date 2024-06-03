@@ -28,8 +28,10 @@ The SOC received an alert in their SIEM for ‘Local to Local Port Scanning’ w
 <img src="https://github.com/nickstrunk/Network-Analysis-Web-Shell-Easy-/assets/165805194/73fb6af0-40a6-4b55-a104-7aacf27c3c45" height="80%" width="80%" alt="Planning Diagram"/>
 <br />
 <br />
- 
-
+<h3>Q1)What is the port range scanned by the suspicious host?</h3>
+<b>Sort on Port B both ways to see first and last port scanned</b> <b />
+** See the port range is 1-1024 <br /> <br />
+<img src="https://github.com/nickstrunk/Network-Analysis-Web-Shell-Easy-/assets/165805194/7c622811-56d9-4729-9e55-f5a40b0ab69f" height="80%" width="80%" alt="Planning Diagram"/>
  
 
 
