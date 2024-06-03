@@ -47,6 +47,23 @@ The SOC received an alert in their SIEM for ‘Local to Local Port Scanning’ w
 <br />
 <br />
 
+<h3>Q4)Two more tools were used to perform reconnaissance against open ports, what were they?</h3>
+<b>Investigate User Agent Strings</b> <br />
+** Leave signature of the tool it is originating from <br /> 
+** Filter ip.dst==10.251.96.5 && http.user_agent -all packets that have a user agent string to the target IP <br />
+** Pattern of HTTP Get requests <br />
+** Inspect one of the suspicious requests > Shows gobuster 3.0.1 (brute forcing tool) <br /> <br />
+<img src="https://github.com/nickstrunk/Network-Analysis-Web-Shell-Easy-/assets/165805194/2b00cc04-dbaa-49fa-b6d2-35677734ff33" height="80%" width="80%" alt="Planning Diagram"/>
+<br />
+<br />
+** Search beyond gobuster packets > Discover pagckets with URL encoding and embedded SQL commands <br />
+** Inspect suspicious packets > Shows sqlmap 1.4.7 <br /> <br />
+<img src="https://github.com/nickstrunk/Network-Analysis-Web-Shell-Easy-/assets/165805194/038c6350-934a-4cd8-88a5-9b0d5d0fe16c" height="80%" width="80%" alt="Planning Diagram"/>
+<br />
+<br />
+** ANSWER TO Q4) gobuster 3.0.1, sqlmap 1.4.7
+<br />
+<br />
 
 </p>
 
